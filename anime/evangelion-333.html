@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Евангелион 3.33 - A G</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #b71c1c;
+            --dark-bg: #080c14;
+            --card-bg: #111827;
+            --accent-color: #7b1fa2;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+        }
+        
+        .anime-details {
+            padding: 50px 0;
+        }
+        
+        .anime-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+        }
+        
+        .anime-poster img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .anime-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .anime-info .details {
+            margin-bottom: 20px;
+        }
+        
+        .anime-info .details span {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--gray-text);
+        }
+        
+        .anime-info .details span i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+        
+        .anime-info .synopsis {
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .episodes-section {
+            margin-top: 50px;
+        }
+        
+        .episodes-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .episodes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #333;
+            margin-left: 15px;
+        }
+        
+        .player-container {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .player {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #000;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .anime-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .anime-poster {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            
+            .player {
+                aspect-ratio: 4/3;
+            }
+        }
+        
+        /* Стили для сносок под плеером */
+        .player-notices {
+            margin-top: 20px;
+        }
+        
+        .notice {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        
+        .notice i {
+            margin-top: 3px;
+        }
+        
+        .notice p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .notice a {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">A G</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="anime-details">
+            <div class="container">
+                <div class="anime-container">
+                    <div class="anime-poster">
+                        <img src="../img/eva3.jpeg" alt="Евангелион 3.33">
+                    </div>
+                    <div class="anime-info">
+                        <h1>Евангелион 3.33: Ты (не) исправишь</h1>
+                        <div class="details">
+                            <span><i class="fas fa-calendar"></i> 2012</span>
+                            <span><i class="fas fa-star"></i> 8.3/10</span>
+                            <span><i class="fas fa-clock"></i> Фильм</span>
+                            <span><i class="fas fa-tags"></i> Меха, Психология, Научная фантастика</span>
+                            <span><i class="fas fa-volume-high"></i> Официальная озвучка</span>
+                        </div>
+                        <div class="synopsis">
+                            <p>"Евангелион 3.33: Ты (не) исправишь" — третий фильм в тетралогии "Rebuild of Evangelion", который радикально отходит от сюжета оригинального сериала и предыдущих фильмов.</p>
+                            <p>Действие фильма разворачивается спустя 14 лет после событий "Околотретьего удара". Синдзи Икари, находившийся всё это время внутри Евангелиона Юнит-01, возвращается в мир, который полностью изменился. Земля превратилась в постапокалиптическую пустошь, а бывшие товарищи Синдзи теперь относятся к нему с враждебностью.</p>
+                            <p>Синдзи узнаёт, что его попытка спасти Рей в предыдущем фильме привела к катастрофе, в результате которой большая часть человечества погибла. Теперь он находится на борту корабля "Вундер", управляемого организацией "WILLE", которую возглавляет Мисато Кацураги. Они сражаются против NERV, которая всё ещё находится под руководством Гендо Икари.</p>
+                            <p>Синдзи, сломленный чувством вины и непониманием, решает вернуться в NERV, где встречает загадочную личность — Каору Нагису. Вместе они узнают о истинных намерениях Гендо и плане "Проект Инструментальности Человечества", который может привести к полному уничтожению человечества. Фильм завершается трагическими событиями, которые ставят Синдзи на грань психологического краха.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="episodes-section">
+                    <h2 class="episodes-title">Смотреть онлайн</h2>
+                    
+                    <div class="player-container">
+                        <div class="player">
+                            <iframe src="https://kodik.info/video/33414/48520d49a155cbfbd9cd1bccde801eb7/720p" width="100%" height="100%" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+                        </div>
+                        
+                        <div class="player-notices">
+                            <div class="notice">
+                                <i class="fas fa-exclamation-circle" style="color: var(--accent-color);"></i>
+                                <p>Администрация сайта не несет ответственности за содержание рекламы в плеере.</p>
+                            </div>
+                            
+                            <div class="notice">
+                                <i class="fas fa-volume-high" style="color: var(--accent-color);"></i>
+                                <p>Рекомендуем выбрать озвучку Reanimedia в настройках плеера для лучшего качества просмотра.</p>
+                            </div>
+                            
+                            <div class="notice" id="ublock-notice">
+                                <i class="fas fa-shield-alt" style="color: var(--accent-color);"></i>
+                                <p>Для блокировки рекламы и комфортного просмотра рекомендуем установить расширение uBlock Origin. <a href="#" id="ublock-link" target="_blank">Скачать для вашего браузера</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>A G</h2>
+                    <p>Лучшие аниме в официальной озвучке</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="../catalog.html">Каталог</a></li>
+                        <li><a href="../about.html">О нас</a></li>
+                        <li><a href="../copyright.html">Правообладателям</a></li>
+                        <li><a href="../terms.html">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A G. Сайт создан в образовательных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Определение браузера и установка правильной ссылки на uBlock Origin
+        document.addEventListener('DOMContentLoaded', function() {
+            const userAgent = navigator.userAgent;
+            let ublockLink = document.getElementById('ublock-link');
+            
+            if (userAgent.indexOf("Chrome") > -1) {
+                ublockLink.href = "https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm";
+            } else if (userAgent.indexOf("Firefox") > -1) {
+                ublockLink.href = "https://addons.mozilla.org/ru/firefox/addon/ublock-origin/";
+            } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
+                ublockLink.href = "https://addons.opera.com/ru/extensions/details/ublock/";
+            } else if (userAgent.indexOf("Edg") > -1) {
+                ublockLink.href = "https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak";
+            } else {
+                document.getElementById('ublock-notice').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исчезновение Харухи Судзумии - A G</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #5c88da;
+            --secondary-color: #8ec5fc;
+            --dark-bg: #131e2f;
+            --card-bg: #1e2c40;
+            --accent-color: #a7bfe8;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+        }
+        
+        .anime-details {
+            padding: 50px 0;
+        }
+        
+        .anime-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+        }
+        
+        .anime-poster img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .anime-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .anime-info .details {
+            margin-bottom: 20px;
+        }
+        
+        .anime-info .details span {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--gray-text);
+        }
+        
+        .anime-info .details span i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+        
+        .anime-info .synopsis {
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .episodes-section {
+            margin-top: 50px;
+        }
+        
+        .episodes-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .episodes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #333;
+            margin-left: 15px;
+        }
+        
+        .player-container {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .player {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #000;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .anime-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .anime-poster {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            
+            .player {
+                aspect-ratio: 4/3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">A G</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="anime-details">
+            <div class="container">
+                <div class="anime-container">
+                    <div class="anime-poster">
+                        <img src="../img/haruhi3.jpeg" alt="Исчезновение Харухи Судзумии">
+                    </div>
+                    <div class="anime-info">
+                        <h1>Исчезновение Харухи Судзумии</h1>
+                        <div class="details">
+                            <span><i class="fas fa-calendar"></i> 2010</span>
+                            <span><i class="fas fa-star"></i> 8.9/10</span>
+                            <span><i class="fas fa-clock"></i> Фильм</span>
+                            <span><i class="fas fa-tags"></i> Научная фантастика, Драма</span>
+                            <span><i class="fas fa-volume-high"></i> Официальная озвучка</span>
+                        </div>
+                        <div class="synopsis">
+                            <p>Полнометражный фильм "Исчезновение Харухи Судзумии" продолжает историю сериала, разворачивающуюся на фоне зимнего периода. 16 декабря Кён просыпается в мире, где всё кардинально изменилось: Харухи и Ицки исчезли, Микуру не узнаёт его, а Юки стала обычной застенчивой школьницей.</p>
+                            <p>SOS бригада больше не существует, а Кён оказывается единственным, кто помнит прежнюю реальность. В своих попытках разобраться в происходящем, он обнаруживает, что реальность была изменена, и за этим стоит неожиданный персонаж.</p>
+                            <p>Фильм исследует глубокие темы выбора, ответственности и человечности, представляя наиболее эмоциональную и философскую часть франшизы "Харухи Судзумии". События разворачиваются в холодной, зимней атмосфере, которая идеально подчеркивает одиночество и изоляцию, которые испытывает главный герой.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="episodes-section">
+                    <h2 class="episodes-title">Смотреть онлайн</h2>
+                    
+                    <div class="player-container">
+                        <div class="player">
+                            <iframe src="https://kodik.info/video/9933/2d9a04ce83f38f7186f0fff097ea652d/720p" width="100%" height="100%" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>A G</h2>
+                    <p>Лучшие аниме в официальной озвучке</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="../catalog.html">Каталог</a></li>
+                        <li><a href="../about.html">О нас</a></li>
+                        <li><a href="../copyright.html">Правообладателям</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A G. Сайт создан в образовательных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

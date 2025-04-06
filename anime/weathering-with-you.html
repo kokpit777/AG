@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дитя погоды - A G</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e90ff;
+            --secondary-color: #00bfff;
+            --dark-bg: #131b24;
+            --card-bg: #1f2b38;
+            --accent-color: #4bb9fa;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+        }
+        
+        .anime-details {
+            padding: 50px 0;
+        }
+        
+        .anime-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+        }
+        
+        .anime-poster img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .anime-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .anime-info .details {
+            margin-bottom: 20px;
+        }
+        
+        .anime-info .details span {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--gray-text);
+        }
+        
+        .anime-info .details span i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+        
+        .anime-info .synopsis {
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .episodes-section {
+            margin-top: 50px;
+        }
+        
+        .episodes-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .episodes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #333;
+            margin-left: 15px;
+        }
+        
+        .player-container {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .player {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #000;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .anime-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .anime-poster {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            
+            .player {
+                aspect-ratio: 4/3;
+            }
+        }
+        
+        /* Стили для сносок под плеером */
+        .player-notices {
+            margin-top: 20px;
+        }
+        
+        .notice {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        
+        .notice i {
+            margin-top: 3px;
+        }
+        
+        .notice p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .notice a {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">A G</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="anime-details">
+            <div class="container">
+                <div class="anime-container">
+                    <div class="anime-poster">
+                        <img src="../img/weatherkid.jpeg" alt="Дитя погоды">
+                    </div>
+                    <div class="anime-info">
+                        <h1>Дитя погоды</h1>
+                        <div class="details">
+                            <span><i class="fas fa-calendar"></i> 2019</span>
+                            <span><i class="fas fa-star"></i> 8.6/10</span>
+                            <span><i class="fas fa-clock"></i> Фильм</span>
+                            <span><i class="fas fa-tags"></i> Романтика, Фэнтези</span>
+                            <span><i class="fas fa-volume-high"></i> Официальная озвучка</span>
+                        </div>
+                        <div class="synopsis">
+                            <p>Ходака Морисима — старшеклассник, который сбежал из своего родного города на отдалённом острове и оказался в Токио. Поначалу он с трудом справляется с жизнью в мегаполисе, но в конце концов находит работу в небольшом издательстве, которое специализируется на сверхъестественных историях. Вскоре после того, как Ходака устраивается на работу, погода в городе становится необычайно дождливой.</p>
+                            <p>Во время своих скитаний по городу Ходака встречает Хину Амано, девушку со сверхъестественной способностью прояснять небо с помощью молитвы. Из-за некоторых тяжёлых семейных обстоятельств Хина и её младший брат Нагиса живут одни и им приходится нелегко. Ходака придумывает план: использовать способность Хины "останавливать дождь", чтобы помочь людям, которые страдают от непрекращающихся осадков, и одновременно обеспечить девушку и её брата средствами к существованию.</p>
+                            <p>Однако вскоре они узнают, что такая способность имеет свою цену. Использование сил Хины постепенно приводит к тому, что её тело начинает превращаться в воду, и в конце концов она может полностью исчезнуть. Ходаке предстоит сделать выбор между спасением любимой девушки и благополучием целого города.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="episodes-section">
+                    <h2 class="episodes-title">Где посмотреть</h2>
+                    
+                    <div class="player-container">
+                        <div style="padding: 30px; text-align: center;">
+                            <p style="font-size: 1.2rem; margin-bottom: 20px;">Фильм "Дитя погоды" доступен для просмотра на официальных стриминговых платформах:</p>
+                            
+                            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                                <a href="https://www.kinopoisk.ru/film/1219417/" target="_blank" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: #fff;">
+                                    <i class="fas fa-play-circle" style="font-size: 3rem; color: #ff6700; margin-bottom: 10px;"></i>
+                                    <span>Кинопоиск</span>
+                                </a>
+                                
+                                <a href="https://okko.tv/movie/weathering-with-you" target="_blank" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: #fff;">
+                                    <i class="fas fa-film" style="font-size: 3rem; color: #8f00ff; margin-bottom: 10px;"></i>
+                                    <span>Okko</span>
+                                </a>
+                            </div>
+                            
+                            <p style="margin-top: 20px; color: #999; font-size: 0.9rem;">Приобретая фильм на официальных платформах, вы поддерживаете создателей</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>A G</h2>
+                    <p>Лучшие аниме в официальной озвучке</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="../catalog.html">Каталог</a></li>
+                        <li><a href="../about.html">О нас</a></li>
+                        <li><a href="../copyright.html">Правообладателям</a></li>
+                        <li><a href="../terms.html">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A G. Сайт создан в образовательных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

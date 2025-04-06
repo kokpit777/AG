@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меланхолия Харухи Судзумии 2 - A G</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #ffd100;
+            --secondary-color: #ff9100;
+            --dark-bg: #1e1b2a;
+            --card-bg: #2b2838;
+            --accent-color: #c56cf0;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+        }
+        
+        .anime-details {
+            padding: 50px 0;
+        }
+        
+        .anime-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+        }
+        
+        .anime-poster img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .anime-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .anime-info .details {
+            margin-bottom: 20px;
+        }
+        
+        .anime-info .details span {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--gray-text);
+        }
+        
+        .anime-info .details span i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+        
+        .anime-info .synopsis {
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .episodes-section {
+            margin-top: 50px;
+        }
+        
+        .episodes-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .episodes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #333;
+            margin-left: 15px;
+        }
+        
+        .player-container {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .player {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #000;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .anime-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .anime-poster {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            
+            .player {
+                aspect-ratio: 4/3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">A G</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="anime-details">
+            <div class="container">
+                <div class="anime-container">
+                    <div class="anime-poster">
+                        <img src="../img/haruhi2.jpeg" alt="Меланхолия Харухи Судзумии 2">
+                    </div>
+                    <div class="anime-info">
+                        <h1>Меланхолия Харухи Судзумии 2</h1>
+                        <div class="details">
+                            <span><i class="fas fa-calendar"></i> 2009</span>
+                            <span><i class="fas fa-star"></i> 8.1/10</span>
+                            <span><i class="fas fa-clock"></i> 14 эпизодов</span>
+                            <span><i class="fas fa-tags"></i> Комедия, Научная фантастика</span>
+                            <span><i class="fas fa-volume-high"></i> Официальная озвучка</span>
+                        </div>
+                        <div class="synopsis">
+                            <p>Второй сезон культового аниме "Меланхолия Харухи Судзумии" продолжает историю эксцентричной Харухи и её клуба SOS. Этот сезон включает в себя как новые эпизоды, так и знаменитую арку "Бесконечное восьмёрка", в которой герои оказываются запертыми во временной петле.</p>
+                            <p>Кён и остальные члены SOS бригады: инопланетянка Юки Нагато, путешественница во времени Микуру Асахина и эспер Ицки Коидзуми продолжают следить за Харухи, чтобы её бессознательные сверхъестественные способности не разрушили реальность.</p>
+                            <p>Харухи, не подозревая о своих способностях, продолжает вовлекать клуб в невероятные приключения, которые на этот раз включают путешествие на отдалённый остров, затерянный во времени и пространстве, и бесконечное повторение последних двух недель летних каникул.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="episodes-section">
+                    <h2 class="episodes-title">Смотреть онлайн</h2>
+                    
+                    <div class="player-container">
+                        <div class="player">
+                            <iframe src="https://kodik.info/serial/23009/9ce2c5abee6929fd34756bf455f84fb8/720p" width="100%" height="100%" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>A G</h2>
+                    <p>Лучшие аниме в официальной озвучке</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="../catalog.html">Каталог</a></li>
+                        <li><a href="../about.html">О нас</a></li>
+                        <li><a href="../copyright.html">Правообладателям</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Социальные сети</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A G. Сайт создан в образовательных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

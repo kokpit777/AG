@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма голоса - A G</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #7ec0ee;
+            --secondary-color: #ffb6c1;
+            --dark-bg: #1a2029;
+            --card-bg: #2a3040;
+            --accent-color: #ff9eb5;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+        }
+        
+        .anime-details {
+            padding: 50px 0;
+        }
+        
+        .anime-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+        }
+        
+        .anime-poster img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .anime-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .anime-info .details {
+            margin-bottom: 20px;
+        }
+        
+        .anime-info .details span {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--gray-text);
+        }
+        
+        .anime-info .details span i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+        
+        .anime-info .synopsis {
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .episodes-section {
+            margin-top: 50px;
+        }
+        
+        .episodes-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .episodes-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #333;
+            margin-left: 15px;
+        }
+        
+        .player-container {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .player {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #000;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-text);
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .anime-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .anime-poster {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            
+            .player {
+                aspect-ratio: 4/3;
+            }
+        }
+        
+        /* Стили для сносок под плеером */
+        .player-notices {
+            margin-top: 20px;
+        }
+        
+        .notice {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        
+        .notice i {
+            margin-top: 3px;
+        }
+        
+        .notice p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .notice a {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">A G</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="anime-details">
+            <div class="container">
+                <div class="anime-container">
+                    <div class="anime-poster">
+                        <img src="../img/voice.jpeg" alt="Форма голоса">
+                    </div>
+                    <div class="anime-info">
+                        <h1>Форма голоса</h1>
+                        <div class="details">
+                            <span><i class="fas fa-calendar"></i> 2016</span>
+                            <span><i class="fas fa-star"></i> 8.9/10</span>
+                            <span><i class="fas fa-clock"></i> Фильм</span>
+                            <span><i class="fas fa-tags"></i> Драма, Школа</span>
+                            <span><i class="fas fa-volume-high"></i> Официальная озвучка</span>
+                        </div>
+                        <div class="synopsis">
+                            <p>Сёя Ишида — обычный школьник, жизнь которого сильно меняется, когда в его класс переводится глухая девочка по имени Шоко Нишимия. Сёя и его друзья начинают издеваться над новой одноклассницей из-за её инвалидности, доводя ситуацию до того, что Шоко вынуждена перевестись в другую школу.</p>
+                            <p>Годы спустя, будучи старшеклассником, Сёя, терзаемый чувством вины за свои поступки, решает разыскать Шоко, чтобы извиниться и, если возможно, искупить свою вину. Он встречает повзрослевшую Шоко и пытается воссоздать связь, которую сам же когда-то разрушил.</p>
+                            <p>Фильм затрагивает темы травли, непонимания, социального отчуждения и возможности искупления. История показывает, как Сёя постепенно меняется, учится принимать других и находить себя, преодолевая последствия своих прошлых действий.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="episodes-section">
+                    <h2 class="episodes-title">Смотреть онлайн</h2>
+                    
+                    <div class="player-container">
+                        <div class="player">
+                            <iframe src="https://kodik.info/video/37854/b3f16f57969d92c3baefc6b61f86e5f3/720p" width="100%" height="100%" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+                        </div>
+                        
+                        <div class="player-notices">
+                            <div class="notice">
+                                <i class="fas fa-exclamation-circle" style="color: var(--accent-color);"></i>
+                                <p>Администрация сайта не несет ответственности за содержание рекламы в плеере.</p>
+                            </div>
+                            
+                            <div class="notice">
+                                <i class="fas fa-volume-high" style="color: var(--accent-color);"></i>
+                                <p>Рекомендуем выбрать озвучку Reanimedia в настройках плеера для лучшего качества просмотра.</p>
+                            </div>
+                            
+                            <div class="notice" id="ublock-notice">
+                                <i class="fas fa-shield-alt" style="color: var(--accent-color);"></i>
+                                <p>Для блокировки рекламы и комфортного просмотра рекомендуем установить расширение uBlock Origin. <a href="#" id="ublock-link" target="_blank">Скачать для вашего браузера</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>A G</h2>
+                    <p>Лучшие аниме в официальной озвучке</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="../catalog.html">Каталог</a></li>
+                        <li><a href="../about.html">О нас</a></li>
+                        <li><a href="../copyright.html">Правообладателям</a></li>
+                        <li><a href="../terms.html">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A G. Сайт создан в образовательных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Определение браузера и установка правильной ссылки на uBlock Origin
+        document.addEventListener('DOMContentLoaded', function() {
+            const userAgent = navigator.userAgent;
+            let ublockLink = document.getElementById('ublock-link');
+            
+            if (userAgent.indexOf("Chrome") > -1) {
+                ublockLink.href = "https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm";
+            } else if (userAgent.indexOf("Firefox") > -1) {
+                ublockLink.href = "https://addons.mozilla.org/ru/firefox/addon/ublock-origin/";
+            } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
+                ublockLink.href = "https://addons.opera.com/ru/extensions/details/ublock/";
+            } else if (userAgent.indexOf("Edg") > -1) {
+                ublockLink.href = "https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak";
+            } else {
+                document.getElementById('ublock-notice').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> 

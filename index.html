@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A G - Аниме портал</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .anime-card {
+            overflow: hidden;
+        }
+        
+        .anime-info h3 {
+            height: 48px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            line-height: 1.3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">A G</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Добро пожаловать на A G!</h2>
+                    <p>Смотрите лучшие аниме в официальной озвучке</p>
+                    <a href="catalog.html" class="btn btn-primary btn-large">Смотреть</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Популярные аниме</h2>
+                <div class="anime-grid">
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="img/gurrenLaggan.jpeg" alt="Гуррен-Лаганн">
+                        </div>
+                        <div class="anime-info">
+                            <h3>Гуррен-Лаганн</h3>
+                            <a href="anime/gurren-lagann.html" class="btn">Смотреть</a>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="img/haruhi1.webp" alt="Меланхолия Харухи Судзумии">
+                        </div>
+                        <div class="anime-info">
+                            <h3>Меланхолия Харухи Судзумии</h3>
+                            <a href="anime/melancholy-of-haruhi-suzumiya.html" class="btn">Смотреть</a>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="img/haruhi3.jpeg" alt="Исчезновение Харухи Судзумии">
+                        </div>
+                        <div class="anime-info">
+                            <h3>Исчезновение Харухи Судзумии</h3>
+                            <a href="anime/disappearance-of-haruhi-suzumiya.html" class="btn">Смотреть</a>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="img/sheseeasky.jpeg" alt="Она видела небо">
+                        </div>
+                        <div class="anime-info">
+                            <h3>Она видела небо</h3>
+                            <a href="anime/she-sees-sky.html" class="btn">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more-container">
+                    <a href="catalog.html" class="btn btn-secondary">Показать больше</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>A G</h2>
+                    <p>Лучшие аниме в официальной озвучке</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="copyright.html">Правообладателям</a></li>
+                        <li><a href="terms.html">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A G. Сайт создан в образовательных целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
