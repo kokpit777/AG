@@ -112,6 +112,35 @@
                 aspect-ratio: 4/3;
             }
         }
+        
+        /* Стили для сносок под плеером */
+        .player-notices {
+            margin-top: 20px;
+        }
+        
+        .notice {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        
+        .notice i {
+            margin-top: 3px;
+        }
+        
+        .notice p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .notice a {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -161,7 +190,24 @@
                     
                     <div class="player-container">
                         <div class="player">
-                            <iframe src="https://kodik.info/video/9933/2d9a04ce83f38f7186f0fff097ea652d/720p" width="100%" height="100%" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+                            <iframe src="https://kodik.info/video/19401/d50fe6ef9d4ab975f4c6b4eeea1038b2/720p" width="100%" height="100%" frameborder="0" AllowFullScreen allow="autoplay *; fullscreen *"></iframe>
+                        </div>
+                        
+                        <div class="player-notices">
+                            <div class="notice">
+                                <i class="fas fa-exclamation-circle" style="color: var(--accent-color);"></i>
+                                <p>Администрация сайта не несет ответственности за содержание рекламы в плеере.</p>
+                            </div>
+                            
+                            <div class="notice">
+                                <i class="fas fa-volume-high" style="color: var(--accent-color);"></i>
+                                <p>Рекомендуем выбрать озвучку Reanimedia в настройках плеера для лучшего качества просмотра.</p>
+                            </div>
+                            
+                            <div class="notice" id="ublock-notice">
+                                <i class="fas fa-shield-alt" style="color: var(--accent-color);"></i>
+                                <p>Для блокировки рекламы и комфортного просмотра рекомендуем установить расширение uBlock Origin. <a href="#" id="ublock-link" target="_blank">Скачать для вашего браузера</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -183,15 +229,8 @@
                         <li><a href="../catalog.html">Каталог</a></li>
                         <li><a href="../about.html">О нас</a></li>
                         <li><a href="../copyright.html">Правообладателям</a></li>
+                        <li><a href="../terms.html">Пользовательское соглашение</a></li>
                     </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Социальные сети</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -201,5 +240,24 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+        // Определение браузера и установка правильной ссылки на uBlock Origin
+        document.addEventListener('DOMContentLoaded', function() {
+            const userAgent = navigator.userAgent;
+            let ublockLink = document.getElementById('ublock-link');
+            
+            if (userAgent.indexOf("Chrome") > -1) {
+                ublockLink.href = "https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm";
+            } else if (userAgent.indexOf("Firefox") > -1) {
+                ublockLink.href = "https://addons.mozilla.org/ru/firefox/addon/ublock-origin/";
+            } else if (userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1) {
+                ublockLink.href = "https://addons.opera.com/ru/extensions/details/ublock/";
+            } else if (userAgent.indexOf("Edg") > -1) {
+                ublockLink.href = "https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak";
+            } else {
+                document.getElementById('ublock-notice').style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html> 
